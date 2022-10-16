@@ -1,12 +1,16 @@
 name: gofmt
+
 on:
-  push:
-    branches:
-      - master
   pull_request:
     paths:
       - '.github/workflows/gofmt.yml'
       - '**.go'
+    branches-ignore:
+      - ''
+  push:
+    branches-ignore:
+      - ''
+
 jobs:
 
   gofmt:
