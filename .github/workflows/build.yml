@@ -1,9 +1,6 @@
 name: Build full platform binaries
 
 on:
-  pull_request:
-    branches-ignore:
-      - ''
   push:
     branches-ignore:
       - ''
